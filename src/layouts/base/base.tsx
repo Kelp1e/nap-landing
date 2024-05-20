@@ -4,6 +4,8 @@ import { Link } from "atomic-router-react"
 
 import {
   DISCORD_LINK,
+  DOCS_LINK,
+  GAME_LINK,
   MEDIUM_LINK,
   TWITTER_LINK,
   YOUTUBE_LINK,
@@ -33,19 +35,23 @@ export const Base = (props: { children?: React.ReactNode }) => {
         </div>
         <ol className="hidden items-center gap-[40rem] text-[20rem] md:flex">
           <li>
-            <a href="#">b.01</a>
+            <a href="#b-01">b.01</a>
           </li>
           <li>
-            <a href="#">b.lab</a>
+            <a href="#b-lab">b.lab</a>
           </li>
           <li>
-            <a href="#">b.studio</a>
+            <a href="#b-studio">b.studio</a>
           </li>
           <li>
-            <a href="#">docs</a>
+            <a href={DOCS_LINK} target="_blank">
+              docs
+            </a>
           </li>
           <li>
-            <a href="#">game</a>
+            <a href={GAME_LINK} target="_blank">
+              game
+            </a>
           </li>
           <Button>launch app</Button>
         </ol>
@@ -58,27 +64,33 @@ export const Base = (props: { children?: React.ReactNode }) => {
             <div className="flex flex-col gap-[12rem] text-[20rem] sm:flex-row sm:gap-[150rem]">
               <ol className="flex flex-col gap-[12rem]">
                 <li>
-                  <a href="#">b.01 token</a>
+                  <a href="#b-01">b.01 token</a>
                 </li>
                 <li>
-                  <a href="#">b.lab</a>
+                  <a href="#b-lab">b.lab</a>
                 </li>
                 <li>
                   <a href="#">.NAP</a>
                 </li>
                 <li>
-                  <a href="#">b.studi0</a>
+                  <a href="#b-studio">b.studi0</a>
                 </li>
               </ol>
               <ol className="flex flex-col gap-[12rem]">
                 <li>
-                  <a href="#">docs</a>
+                  <a href={DOCS_LINK} target="_blank">
+                    docs
+                  </a>
                 </li>
                 <li>
-                  <a href="#">bug report</a>
+                  <a href={DISCORD_LINK} target="_blank">
+                    bug report
+                  </a>
                 </li>
                 <li>
-                  <a href="#">contacts</a>
+                  <a href={DISCORD_LINK} target="_blank">
+                    contacts
+                  </a>
                 </li>
               </ol>
             </div>

@@ -2,6 +2,7 @@ import {
   B01UtilityToken,
   BLab,
   BStudio,
+  Collections,
   HeroSection,
   Nap,
 } from "~/pages/home/ui"
@@ -9,12 +10,14 @@ import {
 export const Home = () => {
   return (
     <>
-      <div className="h-[calc(100vh-50rem)]">
+      <div className="flex flex-col gap-[20rem]">
         <HeroSection />
+        <B01UtilityToken />
+        <BLab />
+        <Nap />
+        <BStudio />
+        <Collections />
       </div>
-      {/*<div className="h-[100vh]">*/}
-      {/*  <B01UtilityToken />*/}
-      {/*</div>*/}
       {/*<div className="h-[100vh]">*/}
       {/*  <BLab />*/}
       {/*</div>*/}

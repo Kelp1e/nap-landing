@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 html {
+  scroll-behavior: smooth;
+
   font-size: 1px;
 
   @media (max-width: 375px) {
@@ -50,6 +52,16 @@ html {
 
 @layer components {
   .max-container {
-    @apply w-full px-[20rem] max-w-[1385rem];
+    @apply w-full px-[20rem];
+  }
+
+  .corner {
+    clip-path: polygon(
+      100% 0,
+      100% calc(100% - 25rem),
+      calc(100% - 25rem) 100%,
+      0 100%,
+      0 0
+    );
   }
 }

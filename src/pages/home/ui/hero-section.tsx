@@ -8,7 +8,7 @@ import { DiscordIcon, MediumIcon, TwitterIcon, YouTubeIcon } from "~/shared/ui"
 
 export const HeroSection = () => {
   return (
-    <div className="relative h-full">
+    <div className="relative h-[calc(100vh-45rem)]">
       <video
         src="/scenes/green-aura.webm"
         autoPlay
@@ -17,7 +17,7 @@ export const HeroSection = () => {
         className="h-full w-full object-cover"
       />
 
-      <div className="max-container absolute inset-0 flex items-end justify-end pb-[55rem]">
+      <div className="max-container mx-auto absolute inset-0 flex items-end justify-end pb-[55rem]">
         <div className="flex flex-col items-end gap-[35rem]">
           <span className="text-[60rem]">b0rder1ess</span>
           <span className="max-w-[600rem] text-end text-[20rem]">
