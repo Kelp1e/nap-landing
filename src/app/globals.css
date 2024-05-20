@@ -5,8 +5,8 @@
 html {
   font-size: 1px;
 
-  @media (max-width: 1920px) {
-    font-size: calc(100vw / 1920 * 1);
+  @media (max-width: 375px) {
+    font-size: calc(100vw / 375 * 1);
   }
 }
 
@@ -50,6 +50,6 @@ html {
 
 @layer components {
   .max-container {
-    @apply w-full max-w-[1365rem];
+    @apply w-full px-[20rem] max-w-[1385rem];
   }
 }

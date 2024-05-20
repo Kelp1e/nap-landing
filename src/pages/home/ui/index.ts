@@ -1,2 +1,5 @@
-export { HeroSection } from "./hero-section.tsx"
-export { B01UtilityToken } from "./b01-utility-token.tsx"
+export { HeroSection } from "./hero-section"
+export { B01UtilityToken } from "./b01-utility-token"
+export { BLab } from "./b-lab"
+export { Nap } from "./nap"
+export { BStudio } from "./b-studio"

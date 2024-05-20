@@ -1,4 +1,4 @@
-import { Card } from "~/shared/ui"
+import { Button, Card } from "~/shared/ui"
 
 export const B01UtilityToken = () => {
   return (
@@ -22,7 +22,7 @@ export const B01UtilityToken = () => {
             description={"Will offer discounts on ecosystem products."}
           />
         </div>
-        <div className="flex flex-col gap-[40rem] items-end">
+        <div className="flex flex-col gap-[34rem] items-end">
           <span className="text-[60rem]">b.01 Utility Token</span>
           <span className="max-w-[500rem] text-[20rem] text-end">
             The b01 token is the native utility token within the b0rder1ess
@@ -30,8 +30,8 @@ export const B01UtilityToken = () => {
             features, services, and opportunities the platform provides
           </span>
           <div className="flex items-center gap-[40rem] text-[20rem]">
-            <button>[ coinmarketcap ]</button>
-            <button>[ coingecko ]</button>
+            <Button>coinmarketcap</Button>
+            <Button>coingecko</Button>
           </div>
         </div>
       </div>

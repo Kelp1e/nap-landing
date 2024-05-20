@@ -1,0 +1,21 @@
+import { Button } from "~/shared/ui"
+
+export const BLab = () => {
+  return (
+    <div className="max-container mx-auto flex h-full items-end justify-end pb-[55rem]">
+      <div className="flex flex-col items-end gap-[45rem]">
+        <span className="text-[60rem]">b.lab</span>
+        <span className="max-w-[380rem] text-end text-[20rem]">
+          b0rder1ess .1ab is dedicated to developing innovative solutions for
+          the Web3 market:
+        </span>
+        <div className="flex items-center gap-[8rem]">
+          <Button variant="filled">NAP</Button>
+          <Button variant="filled">ASI</Button>
+          <Button variant="filled">SOC</Button>
+        </div>
+        <Button>get in touch</Button>
+      </div>
+    </div>
+  )
+}
