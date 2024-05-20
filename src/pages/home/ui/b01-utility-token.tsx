@@ -4,18 +4,6 @@ export const B01UtilityToken = () => {
   return (
     <div className="max-container mx-auto flex h-full items-end pb-[55rem]">
       <div className="flex w-full items-end justify-between">
-        <div className="flex flex-col gap-[40rem]">
-          <span className="text-[60rem]">b.01 Utility Token</span>
-          <span className="max-w-[500rem] text-[20rem]">
-            The b01 token is the native utility token within the b0rder1ess
-            ecosystem, enabling users to access and engage with a wide range of
-            features, services, and opportunities the platform provides
-          </span>
-          <div className="flex items-center gap-[40rem] text-[20rem]">
-            <button>[ coinmarketcap ]</button>
-            <button>[ coingecko ]</button>
-          </div>
-        </div>
         <div className="grid w-[450rem] grid-cols-1 grid-rows-3 gap-[5rem]">
           <Card
             title={"Liquidity aggregation"}
@@ -33,6 +21,18 @@ export const B01UtilityToken = () => {
             title={"Liquidity aggregation"}
             description={"Will offer discounts on ecosystem products."}
           />
+        </div>
+        <div className="flex flex-col gap-[40rem] items-end">
+          <span className="text-[60rem]">b.01 Utility Token</span>
+          <span className="max-w-[500rem] text-[20rem] text-end">
+            The b01 token is the native utility token within the b0rder1ess
+            ecosystem, enabling users to access and engage with a wide range of
+            features, services, and opportunities the platform provides
+          </span>
+          <div className="flex items-center gap-[40rem] text-[20rem]">
+            <button>[ coinmarketcap ]</button>
+            <button>[ coingecko ]</button>
+          </div>
         </div>
       </div>
     </div>
