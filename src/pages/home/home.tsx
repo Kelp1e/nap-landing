@@ -1,22 +1,11 @@
-import { useUnit } from "effector-react"
-
-import { homeModel } from "~/pages/home"
-
-import { UserIcon } from "~/shared/ui"
+import { HeroSection } from "~/pages/home/ui"
 
 export const Home = () => {
-  const [increment, decrement, counter] = useUnit([
-    homeModel.incremented,
-    homeModel.decremented,
-    homeModel.$counter,
-  ])
-
   return (
-    <div>
-      <UserIcon className="w-[16rem]" />
-      <h1>Count: {counter}</h1>
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
-    </div>
+    <>
+      <div className="h-[calc(100vh-50rem)]">
+        <HeroSection />
+      </div>
+    </>
   )
 }

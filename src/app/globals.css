@@ -5,13 +5,51 @@
 html {
   font-size: 1px;
 
-  @media (max-width: 320px) {
-    font-size: calc(100vw / 320 * 1);
+  @media (max-width: 1920px) {
+    font-size: calc(100vw / 1920 * 1);
   }
 }
 
 @layer base {
+  @font-face {
+    font-family: "monorama";
+    src: url("/fonts/monorama/monorama-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "monorama";
+    src: url("/fonts/monorama/monorama-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "monorama";
+    src: url("/fonts/monorama/monorama-medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "monorama";
+    src: url("/fonts/monorama/monorama-semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
   body {
-    @apply bg-white text-[16rem] text-black dark:bg-black dark:text-white;
+    @apply bg-black font-monorama text-[16rem] text-white dark:bg-black dark:text-white;
+  }
+}
+
+@layer components {
+  .max-container {
+    @apply w-full max-w-[1365rem];
   }
 }
