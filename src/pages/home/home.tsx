@@ -18,15 +18,6 @@ export const Home = () => {
         <BStudio />
         <Collections />
       </div>
-      {/*<div className="h-[100vh]">*/}
-      {/*  <BLab />*/}
-      {/*</div>*/}
-      {/*<div className="h-[100vh]">*/}
-      {/*  <Nap />*/}
-      {/*</div>*/}
-      {/*<div className="h-[100vh]">*/}
-      {/*  <BStudio />*/}
-      {/*</div>*/}
     </>
   )
 }
