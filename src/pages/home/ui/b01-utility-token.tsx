@@ -5,7 +5,7 @@ export const B01UtilityToken = () => {
     <Scene
       id="b-01"
       src="/scenes/nap.webm"
-      className="mx-[20rem] h-[calc(100vh-40rem)]"
+      className="mx-[20rem] h-[calc(100vh-40rem)] scroll-mt-[20rem]"
     >
       nap
       {/*<div className="max-container mx-auto flex h-full items-end pb-[55rem]">*/}

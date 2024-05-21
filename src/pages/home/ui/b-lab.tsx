@@ -5,7 +5,7 @@ export const BLab = () => {
     <Scene
       id="b-lab"
       src={"/scenes/orange.webm"}
-      className="mx-[20rem] h-[calc(100vh-40rem)]"
+      className="mx-[20rem] h-[calc(100vh-40rem)] scroll-mt-[20rem]"
     >
       orange
       {/*<div className="flex flex-col items-end gap-[45rem]">*/}

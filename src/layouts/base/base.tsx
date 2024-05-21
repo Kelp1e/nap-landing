@@ -35,13 +35,13 @@ export const Base = (props: { children?: React.ReactNode }) => {
         </div>
         <ol className="hidden items-center gap-[40rem] text-[20rem] md:flex">
           <li>
-            <a href="#b-01">b.01</a>
+            <a href={"#b-01"}>b.01</a>
           </li>
           <li>
-            <a href="#b-lab">b.lab</a>
+            <a href={"#b-lab"}>b.lab</a>
           </li>
           <li>
-            <a href="#b-studio">b.studio</a>
+            <a href={"#b-studio"}>b.studio</a>
           </li>
           <li>
             <a href={DOCS_LINK} target="_blank">
@@ -60,20 +60,20 @@ export const Base = (props: { children?: React.ReactNode }) => {
       <footer>
         <div className="max-container mx-auto flex flex-col gap-[20rem] py-[20rem] sm:gap-[60rem] sm:pt-[75rem]">
           <div className="flex flex-col justify-between gap-[20rem] sm:flex-row">
-            <span className="text-[36rem]">b0rder1ess</span>
+            <span className="text-[36rem] leading-none">b0rder1ess</span>
             <div className="flex flex-col gap-[12rem] text-[20rem] sm:flex-row sm:gap-[150rem]">
               <ol className="flex flex-col gap-[12rem]">
                 <li>
-                  <a href="#b-01">b.01 token</a>
+                  <a href={"#b-01"}>b.01 token</a>
                 </li>
                 <li>
-                  <a href="#b-lab">b.lab</a>
+                  <a href={"#b-lab"}>b.lab</a>
                 </li>
                 <li>
                   <a href="#">.NAP</a>
                 </li>
                 <li>
-                  <a href="#b-studio">b.studi0</a>
+                  <a href={"#b-studio"}>b.studi0</a>
                 </li>
               </ol>
               <ol className="flex flex-col gap-[12rem]">

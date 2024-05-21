@@ -5,7 +5,7 @@ export const BStudio = () => {
     <Scene
       id={"b-studio"}
       src={"/scenes/violet.webm"}
-      className="mx-[20rem] h-[calc(100vh-40rem)]"
+      className="mx-[20rem] h-[calc(100vh-40rem)] scroll-mt-[20rem]"
     >
       violet
     </Scene>
