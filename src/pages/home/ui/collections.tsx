@@ -1,5 +1,5 @@
 import { BORDERLESS_ART_LINK, cn, DYOR_LINK, TWITTER_LINK } from "~/shared/lib"
-import { Slider, SliderItem, SliderItems } from "~/shared/ui"
+import { Slider, SliderItems } from "~/shared/ui"
 
 const title: Record<number, string> = {
   0: "b0rder1ess.nft collection",
@@ -38,7 +38,7 @@ export const Collections = () => {
                     <a
                       href={link[currentSlide]}
                       target="_blank"
-                      className="flex items-center gap-[10rem] text-[20rem]"
+                      className="flex w-fit items-center gap-[10rem] text-[20rem]"
                     >
                       <span>[</span>
                       learn more
@@ -70,30 +70,26 @@ export const Collections = () => {
               </div>
             </div>
             <SliderItems className="h-full w-full">
-              <SliderItem>
-                <div className="relative max-h-full min-h-full min-w-full max-w-full">
-                  <div className="absolute inset-0 bg-black/50" />
-                  <video
-                    src="/scenes/b01.mp4"
-                    muted
-                    loop
-                    autoPlay
-                    className="max-h-full min-h-full min-w-full max-w-full object-cover"
-                  />
-                </div>
-              </SliderItem>
-              <SliderItem>
-                <div className="relative max-h-full min-h-full min-w-full max-w-full">
-                  <div className="absolute inset-0 bg-black/50" />
-                  <video
-                    src="/scenes/dyor.mp4"
-                    muted
-                    loop
-                    autoPlay
-                    className="max-h-full min-h-full min-w-full max-w-full object-cover"
-                  />
-                </div>
-              </SliderItem>
+              <div className="relative h-full w-full">
+                <div className="absolute inset-0 bg-black/50" />
+                <video
+                  src="/scenes/b01.mp4"
+                  muted
+                  loop
+                  autoPlay
+                  className="max-h-full min-h-full min-w-full max-w-full object-cover"
+                />
+              </div>
+              <div className="relative h-full w-full">
+                <div className="absolute inset-0 bg-black/50" />
+                <video
+                  src="/scenes/dyor.mp4"
+                  muted
+                  loop
+                  autoPlay
+                  className="max-h-full min-h-full min-w-full max-w-full object-cover"
+                />
+              </div>
             </SliderItems>
           </div>
         )}
