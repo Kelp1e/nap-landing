@@ -3,9 +3,9 @@ import React from "react"
 import { Link } from "atomic-router-react"
 
 import {
+  BORDERLESS_ART_LINK,
   DISCORD_LINK,
   DOCS_LINK,
-  BORDERLESS_ART_LINK,
   MEDIUM_LINK,
   TWITTER_LINK,
   YOUTUBE_LINK,
@@ -13,9 +13,9 @@ import {
 import { routes } from "~/shared/routing.ts"
 import {
   BurgerMenu,
-  Button,
   DiscordIcon,
   MediumIcon,
+  Text,
   TwitterIcon,
   YouTubeIcon,
 } from "~/shared/ui"
@@ -53,7 +53,9 @@ export const Base = (props: { children?: React.ReactNode }) => {
               game
             </a>
           </li>
-          <Button>launch app</Button>
+          <Text as="a" href={BORDERLESS_ART_LINK} target="_blank">
+            launch app
+          </Text>
         </ol>
       </header>
       {children}
