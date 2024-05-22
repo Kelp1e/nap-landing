@@ -1,6 +1,6 @@
 import { cn } from "~/shared/lib"
 
-interface CardProps {
+export interface CardProps {
   title: string
   description: string
   disabled?: boolean

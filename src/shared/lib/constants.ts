@@ -7,3 +7,6 @@ export const DOCS_LINK = "https://docs.borderless.art/"
 export const BORDERLESS_ART_LINK = "https://borderless.art/"
 
 export const DYOR_LINK = "https://dyor.art/"
+
+export const BO1_COINMARKETCAP = "https://coinmarketcap.com/currencies/b0rder1ess/"
+export const B01_COINGECKO = "https://www.coingecko.com/uk/coins/b0rder1ess/usd"

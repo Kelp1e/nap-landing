@@ -1,5 +1,5 @@
 import { BORDERLESS_ART_LINK, cn, DYOR_LINK, TWITTER_LINK } from "~/shared/lib"
-import { Slider, SliderItems } from "~/shared/ui"
+import { Slider, SliderItems, Text } from "~/shared/ui"
 
 const title: Record<number, string> = {
   0: "b0rder1ess.nft collection",
@@ -35,15 +35,9 @@ export const Collections = () => {
                     <span className="w-full max-w-[475rem] text-[20rem]">
                       {description[currentSlide]}
                     </span>
-                    <a
-                      href={link[currentSlide]}
-                      target="_blank"
-                      className="flex w-fit items-center gap-[10rem] text-[20rem]"
-                    >
-                      <span>[</span>
+                    <Text as={"a"} href={link[currentSlide]} target="_blank">
                       learn more
-                      <span>]</span>
-                    </a>
+                    </Text>
                   </div>
                 </div>
                 <div className="flex flex-col items-end gap-[16rem] pr-[80rem] text-[32rem]">
@@ -70,22 +64,22 @@ export const Collections = () => {
               </div>
             </div>
             <SliderItems className="h-full w-full">
-              <div className="bg-black h-full w-full">
+              <div className="h-full w-full bg-black">
                 <video
                   src="/scenes/b01.mp4"
                   muted
                   loop
                   autoPlay
-                  className="max-h-full opacity-50 min-h-full min-w-full max-w-full object-cover"
+                  className="max-h-full min-h-full min-w-full max-w-full object-cover opacity-50"
                 />
               </div>
-              <div className="bg-black h-full w-full">
+              <div className="h-full w-full bg-black">
                 <video
                   src="/scenes/dyor.mp4"
                   muted
                   loop
                   autoPlay
-                  className="max-h-full opacity-50 min-h-full min-w-full max-w-full object-cover"
+                  className="max-h-full min-h-full min-w-full max-w-full object-cover opacity-50"
                 />
               </div>
             </SliderItems>

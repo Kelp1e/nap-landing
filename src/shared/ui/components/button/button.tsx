@@ -1,6 +1,7 @@
 import React from "react"
 
 import { cn } from "~/shared/lib"
+import { Text } from "~/shared/ui"
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "brackets" | "filled"
@@ -11,14 +12,9 @@ export const Button = (props: ButtonProps) => {
 
   if (variant === "brackets") {
     return (
-      <button
-        className={cn("flex items-center gap-[10rem] text-[20rem]", className)}
-        {...rest}
-      >
-        <span>[</span>
+      <Text as={"button"} className={className} {...rest}>
         {children}
-        <span>]</span>
-      </button>
+      </Text>
     )
   }
 
