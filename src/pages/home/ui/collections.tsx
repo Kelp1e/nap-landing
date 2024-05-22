@@ -71,22 +71,28 @@ export const Collections = () => {
             </div>
             <SliderItems className="h-full w-full">
               <SliderItem>
-                <video
-                  src="/scenes/b01.mp4"
-                  muted
-                  loop
-                  autoPlay
-                  className="max-h-full min-h-full min-w-full max-w-full object-cover"
-                />
+                <div className="relative max-h-full min-h-full min-w-full max-w-full">
+                  <div className="absolute inset-0 bg-black/50" />
+                  <video
+                    src="/scenes/b01.mp4"
+                    muted
+                    loop
+                    autoPlay
+                    className="max-h-full min-h-full min-w-full max-w-full object-cover"
+                  />
+                </div>
               </SliderItem>
               <SliderItem>
-                <video
-                  src="/scenes/dyor.mp4"
-                  muted
-                  loop
-                  autoPlay
-                  className="max-h-full min-h-full min-w-full max-w-full object-cover"
-                />
+                <div className="relative max-h-full min-h-full min-w-full max-w-full">
+                  <div className="absolute inset-0 bg-black/50" />
+                  <video
+                    src="/scenes/dyor.mp4"
+                    muted
+                    loop
+                    autoPlay
+                    className="max-h-full min-h-full min-w-full max-w-full object-cover"
+                  />
+                </div>
               </SliderItem>
             </SliderItems>
           </div>
