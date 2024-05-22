@@ -2,8 +2,6 @@ import React, { useContext } from "react"
 
 interface SliderContextProps {
   currentSlide: number
-  prev: () => void
-  next: () => void
 }
 
 export const SliderContext = React.createContext<SliderContextProps | null>(

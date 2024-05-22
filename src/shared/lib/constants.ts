@@ -4,4 +4,6 @@ export const YOUTUBE_LINK = "https://www.youtube.com/@b0rder1ess"
 export const MEDIUM_LINK = "https://medium.com/"
 
 export const DOCS_LINK = "https://docs.borderless.art/"
-export const GAME_LINK = "https://borderless.art/"
+export const BORDERLESS_ART_LINK = "https://borderless.art/"
+
+export const DYOR_LINK = "https://dyor.art/"

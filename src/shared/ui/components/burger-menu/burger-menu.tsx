@@ -1,6 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react"
 
-import { DOCS_LINK, GAME_LINK } from "~/shared/lib"
+import { DOCS_LINK, BORDERLESS_ART_LINK } from "~/shared/lib"
 import { BurgerIcon, CancelIcon } from "~/shared/ui"
 
 
@@ -32,7 +32,7 @@ export const BurgerMenu = () => {
           </a>
         </MenuItem>
         <MenuItem>
-          <a href={GAME_LINK} target="_blank">
+          <a href={BORDERLESS_ART_LINK} target="_blank">
             game
           </a>
         </MenuItem>

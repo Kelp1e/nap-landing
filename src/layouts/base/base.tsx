@@ -5,7 +5,7 @@ import { Link } from "atomic-router-react"
 import {
   DISCORD_LINK,
   DOCS_LINK,
-  GAME_LINK,
+  BORDERLESS_ART_LINK,
   MEDIUM_LINK,
   TWITTER_LINK,
   YOUTUBE_LINK,
@@ -49,7 +49,7 @@ export const Base = (props: { children?: React.ReactNode }) => {
             </a>
           </li>
           <li>
-            <a href={GAME_LINK} target="_blank">
+            <a href={BORDERLESS_ART_LINK} target="_blank">
               game
             </a>
           </li>
