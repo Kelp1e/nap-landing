@@ -1,5 +1,12 @@
 import { BORDERLESS_ART_LINK } from "~/shared/lib"
-import { Button, Scene, Text } from "~/shared/ui"
+import {
+  Button,
+  Scene,
+  Text,
+  Tooltip,
+  TooltipPanel,
+  TooltipTrigger,
+} from "~/shared/ui"
 
 export const BLab = () => {
   return (
@@ -17,12 +24,22 @@ export const BLab = () => {
           </span>
           <div className="flex items-center gap-[8rem]">
             <Button variant="filled">NAP</Button>
-            <Button variant="filled" disabled>
-              ASI
-            </Button>
-            <Button variant="filled" disabled>
-              SOC
-            </Button>
+            <Tooltip>
+              <TooltipTrigger>
+                <Button variant="filled" disabled>
+                  ASI
+                </Button>
+              </TooltipTrigger>
+              <TooltipPanel>coming soon</TooltipPanel>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger>
+                <Button variant="filled" disabled>
+                  SOC
+                </Button>
+              </TooltipTrigger>
+              <TooltipPanel>coming soon</TooltipPanel>
+            </Tooltip>
           </div>
           <Text as="a" href={BORDERLESS_ART_LINK} target="_blank">
             get in touch

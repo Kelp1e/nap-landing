@@ -1,5 +1,12 @@
 import { BORDERLESS_ART_LINK, cn, DYOR_LINK, TWITTER_LINK } from "~/shared/lib"
-import { Slider, SliderItems, Text } from "~/shared/ui"
+import {
+  Slider,
+  SliderItems,
+  Text,
+  Tooltip,
+  TooltipPanel,
+  TooltipTrigger,
+} from "~/shared/ui"
 
 const title: Record<number, string> = {
   0: "b0rder1ess.nft collection",
@@ -57,9 +64,14 @@ export const Collections = () => {
                   >
                     dyor
                   </button>
-                  <button disabled className="text-white/50">
-                    generic
-                  </button>
+                  <Tooltip offset={{mainAxis: -20, alignmentAxis: -15}}>
+                    <TooltipTrigger>
+                      <button disabled className="text-white/50">
+                        generic
+                      </button>
+                    </TooltipTrigger>
+                    <TooltipPanel>coming soon</TooltipPanel>
+                  </Tooltip>
                 </div>
               </div>
             </div>

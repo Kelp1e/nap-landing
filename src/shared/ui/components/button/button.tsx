@@ -22,7 +22,7 @@ export const Button = (props: ButtonProps) => {
     return (
       <button
         className={cn(
-          "rounded-[4rem] disabled:bg-white disabled:text-black border-[1rem] px-[20rem] pb-[7rem] pt-[4rem] leading-none",
+          "rounded-[4rem] disabled:bg-transparent bg-white text-black disabled:text-white border-[1rem] px-[20rem] pb-[7rem] pt-[4rem] leading-none",
           className
         )}
         {...rest}
