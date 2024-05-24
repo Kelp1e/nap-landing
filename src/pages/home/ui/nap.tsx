@@ -73,7 +73,7 @@ export const Nap = () => {
       <div className="flex flex-col justify-between gap-[36rem] md:gap-[100rem]">
         <div className="flex w-full flex-col">
           <div className="flex w-full justify-end">
-            <div className="grid w-full md:max-w-[660rem] grid-cols-1 sm:grid-cols-2 gap-[5rem]">
+            <div className="grid w-full grid-cols-1 grid-rows-4 gap-[5rem] sm:grid-rows-2 sm:grid-cols-2 md:max-w-[660rem]">
               {cards.map((card, index) => (
                 <Card
                   key={index}
