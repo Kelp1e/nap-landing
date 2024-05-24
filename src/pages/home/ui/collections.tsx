@@ -42,12 +42,17 @@ export const Collections = () => {
                     <span className="w-full max-w-[475rem] text-[20rem]">
                       {description[currentSlide]}
                     </span>
-                    <Text as={"a"} href={link[currentSlide]} target="_blank" className="w-fit">
+                    <Text
+                      as={"a"}
+                      href={link[currentSlide]}
+                      target="_blank"
+                      className="w-fit"
+                    >
                       learn more
                     </Text>
                   </div>
                 </div>
-                <div className="flex flex-col items-end gap-[16rem] pr-[80rem] text-[32rem]">
+                <div className="hidden flex-col items-end gap-[16rem] pr-[80rem] text-[32rem] md:flex">
                   <button
                     onClick={() => to(0)}
                     className={cn("text-white/50 transition-colors", {
