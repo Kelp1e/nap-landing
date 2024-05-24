@@ -27,7 +27,7 @@ export const Base = (props: { children?: React.ReactNode }) => {
   return (
     <>
       <header className="max-container mx-auto flex items-center justify-between pt-[25rem] leading-none">
-        <Link to={routes.home} className="text-[24rem]">
+        <Link to={routes.home} className="text-[24rem] leading-none">
           b0rder1ess
         </Link>
         <div className="md:hidden">
