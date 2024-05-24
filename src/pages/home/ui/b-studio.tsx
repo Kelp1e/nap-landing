@@ -53,7 +53,7 @@ export const BStudio = () => {
               solutions for NFT/DeFi projects, aiming to transform the digital
               asset landscape.
             </span>
-            <div className="flex items-center gap-[8rem]">
+            <div className="flex items-center justify-end flex-wrap gap-[8rem]">
               <Button variant="filled">b0rder1ess.nft</Button>
               <Tooltip>
                 <TooltipTrigger>
@@ -72,7 +72,7 @@ export const BStudio = () => {
                 <TooltipPanel>coming soon</TooltipPanel>
               </Tooltip>
             </div>
-            <div className="flex items-center gap-[40rem] text-[20rem]">
+            <div className="flex flex-wrap gap-y-[10rem] justify-end gap-[40rem] text-[20rem]">
               <Text as="a" href={BO1_COINMARKETCAP} target="_blank">
                 coinmarketcap
               </Text>

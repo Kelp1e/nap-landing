@@ -60,7 +60,7 @@ export const Nap = () => {
                 </Text>
               </div>
             </div>
-            <div className="mx-auto flex h-full">
+            <div className="mx-auto hidden h-full lg:flex">
               <img
                 src="/phones.png"
                 alt="phones"
@@ -70,10 +70,10 @@ export const Nap = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-[calc(100vh-40rem)] flex-col justify-between">
+      <div className="flex flex-col justify-between gap-[15rem] md:gap-[100rem]">
         <div className="flex w-full flex-col">
           <div className="flex w-full justify-end">
-            <div className="grid w-full max-w-[660rem] grid-cols-2 gap-[5rem]">
+            <div className="grid w-full md:max-w-[660rem] grid-cols-1 gap-[5rem] md:grid-cols-2">
               {cards.map((card, index) => (
                 <Card
                   key={index}

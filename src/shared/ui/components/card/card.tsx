@@ -13,11 +13,11 @@ export const Card = (props: CardProps) => {
   return (
     <article
       className={cn(
-        "corner relative overflow-hidden  px-[25rem] pb-[25rem] pt-[20rem]",
+        "corner relative overflow-hidden px-[25rem] pb-[25rem] pt-[20rem]",
         {
           "border-[1rem] border-white/30 bg-white/10 backdrop-blur-[20rem]":
             variant === "glass",
-          "bg-white/10": variant === "solid",
+          "bg-white/10 p-[20rem] pt-[15rem]": variant === "solid",
         }
       )}
     >

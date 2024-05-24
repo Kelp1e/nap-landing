@@ -42,7 +42,7 @@ export const Collections = () => {
                     <span className="w-full max-w-[475rem] text-[20rem]">
                       {description[currentSlide]}
                     </span>
-                    <Text as={"a"} href={link[currentSlide]} target="_blank">
+                    <Text as={"a"} href={link[currentSlide]} target="_blank" className="w-fit">
                       learn more
                     </Text>
                   </div>
@@ -64,7 +64,7 @@ export const Collections = () => {
                   >
                     dyor
                   </button>
-                  <Tooltip offset={{mainAxis: -20, alignmentAxis: -15}}>
+                  <Tooltip offset={{ mainAxis: -20, alignmentAxis: -15 }}>
                     <TooltipTrigger>
                       <button disabled className="text-white/50">
                         generic
